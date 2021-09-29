@@ -4,6 +4,8 @@ This project was created with [Create React App](https://github.com/facebook/cre
 
 It replaces Bootstrap with [Materials-UI](https://mui.com/).
 
+![Counter with MUI](Counter.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
