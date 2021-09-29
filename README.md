@@ -2,7 +2,7 @@
 
 This project was created with [Create React App](https://github.com/facebook/create-react-app).
 
-It replaces Bootstrap with [Materials-UI] (https://mui.com/).
+It replaces Bootstrap with [Materials-UI](https://mui.com/).
 
 ## Available Scripts
 
