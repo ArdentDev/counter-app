@@ -25,7 +25,7 @@ const NavBar = ({ totalCounters }) => {
             React Counter
           </Typography>
           <IconButton aria-label="cart">
-            <StyledBadge badgeContent={ totalCounters } color="secondary">
+            <StyledBadge badgeContent={totalCounters} color="secondary">
               <ShoppingCartIcon />
             </StyledBadge>
           </IconButton>
