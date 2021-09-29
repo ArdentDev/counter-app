@@ -2,7 +2,9 @@ import React, { Component, Fragment } from 'react'
 
 import Avatar from '@mui/material/Avatar'
 import Button from '@mui/material/Button'
+import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
+import Typography from '@mui/material/Typography'
 import { deepPurple } from '@mui/material/colors'
 
 class Counter extends Component {
@@ -14,6 +16,11 @@ class Counter extends Component {
           <Avatar sx={{ bgcolor: deepPurple[500] }}>
             {this.formatCount()}
           </Avatar>
+          <Box sx={{ width: '10%' }}>
+            <Typography variant="button" display="block" gutterBottom>
+              {this.props.counter.name}
+            </Typography>
+          </Box>
           <Button
             variant="contained"
             color="primary"
