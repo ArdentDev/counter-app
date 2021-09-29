@@ -40,7 +40,8 @@ class App extends Component {
 
   handleReset = () => {
     const counters = this.state.counters.map(counter => { counter.value = 0; return counter })
-    this.setState(counters)
+    const totalCounters = 0
+    this.setState({ counters, totalCounters })
   }
 
   render () {
