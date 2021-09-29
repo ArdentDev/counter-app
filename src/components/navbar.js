@@ -22,7 +22,7 @@ const NavBar = ({ totalCounters }) => {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            React Counter
+            React Counter with MUI
           </Typography>
           <IconButton aria-label="cart">
             <StyledBadge badgeContent={totalCounters} color="secondary">
