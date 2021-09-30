@@ -8,8 +8,10 @@ import Typography from '@mui/material/Typography'
 import { deepPurple } from '@mui/material/colors'
 
 const Counter = (props) => {
+  const { counter, onIncrement, onDecrement, onDelete } = props
+
   const formatCount = () => {
-    const { value } = props.counter
+    const { value } = counter
     return value === 0 ? 'Zero' : value
   }
 
@@ -19,27 +21,28 @@ const Counter = (props) => {
         <Avatar sx={{ bgcolor: deepPurple[500] }}>{formatCount()}</Avatar>
         <Box sx={{ width: '10%' }}>
           <Typography variant="button" display="block" gutterBottom>
-            {props.counter.name}
+            {counter.name}
           </Typography>
         </Box>
         <Button
           variant="contained"
           color="primary"
-          onClick={() => props.onIncrement(props.counter)}
+          onClick={() => onIncrement(counter)}
         >
           +
         </Button>
         <Button
           variant="contained"
           color="secondary"
-          onClick={() => props.onDecrement(props.counter)}
+          disabled={counter.value === 0 ? true : false}
+          onClick={() => onDecrement(counter)}
         >
           -
         </Button>
         <Button
           variant="contained"
           color="warning"
-          onClick={() => props.onDelete(props.counter.id)}
+          onClick={() => onDelete(counter.id)}
         >
           Delete
         </Button>
