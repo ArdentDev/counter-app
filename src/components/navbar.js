@@ -16,7 +16,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
   },
 }))
 
-const NavBar = ({ totalCounters }) => {
+const NavBar = (props) => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -25,7 +25,7 @@ const NavBar = ({ totalCounters }) => {
             React Counter with MUI
           </Typography>
           <IconButton aria-label="cart">
-            <StyledBadge badgeContent={totalCounters} color="secondary">
+            <StyledBadge badgeContent={props.totalCounters} color="secondary">
               <ShoppingCartIcon />
             </StyledBadge>
           </IconButton>

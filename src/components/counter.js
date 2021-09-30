@@ -11,7 +11,6 @@ class Counter extends Component {
   render() {
     return (
       <Fragment>
-        {this.props.children}
         <Stack spacing={2} direction="row">
           <Avatar sx={{ bgcolor: deepPurple[500] }}>
             {this.formatCount()}

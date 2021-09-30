@@ -18,7 +18,11 @@ class App extends Component {
     const counters = this.state.counters.filter(
       (counter) => counter.id !== counterId
     )
-    this.setState({ counters })
+    let totalCounters = 0
+    for (const counter of counters) {
+      totalCounters += counter.value
+    }
+    this.setState({ counters, totalCounters })
   }
 
   handleIncrement = (counter) => {
